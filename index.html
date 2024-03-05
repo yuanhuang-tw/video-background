@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>video-background</title>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -12,8 +13,10 @@
     </video>
 
     <div class="cover">
-      <h2>THIS IS A TEST.</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+        <h2>THIS IS A TEST.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
     </div>
 
     <nav>
@@ -38,5 +41,10 @@
         <p>10. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis hic optio ab dignissimos recusandae similique tempore veniam aperiam, provident blanditiis quisquam temporibus! Aliquam repudiandae quibusdam nihil hic voluptas molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis hic optio ab dignissimos recusandae similique tempore veniam aperiam, provident blanditiis quisquam temporibus! Aliquam repudiandae quibusdam nihil hic voluptas molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis hic optio ab dignissimos recusandae similique tempore veniam aperiam, provident blanditiis quisquam temporibus! Aliquam repudiandae quibusdam nihil hic voluptas molestias.</p>
       </div>
     </main>
+
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

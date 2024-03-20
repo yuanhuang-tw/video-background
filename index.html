@@ -146,27 +146,6 @@
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
     <script>
       new WOW().init();
-
-      let viewHeight;
-      let navHeight;
-
-      const nav = document.querySelector('nav');
-      const main = document.querySelector('main');
-
-      setMainPaddingTop();
-
-      window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
-          setMainPaddingTop();
-        }
-      });
-
-      function setMainPaddingTop() {
-        viewHeight = window.innerHeight;
-        navHeight = nav.offsetHeight;
-
-        main.style.paddingTop = `${viewHeight - navHeight}px`;
-      }
     </script>
   </body>
 </html>

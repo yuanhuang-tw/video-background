@@ -18,19 +18,24 @@ body {
 
 /* nav */
 nav {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
 
+  transform: translateX(-50%);
+
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   max-width: 1320px;
-  margin: 0 auto;
   padding: 20px;
 
   transition: transform 0.4s;
 }
 nav.open-menu {
-  transform: translateX(-50%);
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 1024px) {
   nav {
@@ -244,7 +249,7 @@ video.open-menu {
 
 /* main */
 main {
-  padding: 100vh 32px 32px;
+  padding: 100svh 32px 32px;
 }
 main .container {
   max-width: 900px;

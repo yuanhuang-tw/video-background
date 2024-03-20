@@ -1,4 +1,5 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
+const nav = document.querySelector('nav');
 const video = document.querySelector('video');
 const videoOverlay = document.querySelector('.video-overlay');
 

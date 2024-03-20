@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
     <div class="wrapper">
       <nav>
         <div class="logo"><a href="index.html">LOGO</a></div>
@@ -145,6 +149,12 @@
 
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
     <script>
+      const loaderWrapper = document.querySelector('.loader-wrapper');
+
+      window.addEventListener('load', () => {
+        loaderWrapper.style.display = 'none';
+      });
+
       new WOW().init();
     </script>
   </body>

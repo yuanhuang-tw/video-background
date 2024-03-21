@@ -1,11 +1,12 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const nav = document.querySelector('nav');
-const video = document.querySelector('video');
-const videoOverlay = document.querySelector('.video-overlay');
+const header = document.querySelector('.header');
+const wow = document.querySelector('.wow');
 
 hamburgerMenu.addEventListener('click', () => {
   hamburgerMenu.classList.toggle('open');
-  nav.classList.toggle('open-menu');
-  video.classList.toggle('open-menu');
-  videoOverlay.classList.toggle('open-menu');
+  header.classList.toggle('open-menu');
 });
+
+setTimeout(() => {
+  wow.style.opacity = 1;
+}, 800);

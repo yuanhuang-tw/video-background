@@ -21,7 +21,17 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(255 255 255 / 0.9);
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.loader-wrapper-fadeout {
+  animation: fadeout 0.5s forwards;
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+  }
 }
 
 .loader {
@@ -48,13 +58,18 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  transition: transform 0.4s;
+}
+.header.open-menu {
+  transform: translateX(-50%);
+}
+
 /* nav */
 nav {
   position: absolute;
   top: 0;
-  left: 50%;
-
-  transform: translateX(-50%);
+  left: 0;
 
   box-sizing: border-box;
   display: flex;
@@ -66,11 +81,12 @@ nav {
 
   transition: transform 0.4s;
 }
-nav.open-menu {
-  transform: translateX(-100%);
-}
 @media screen and (min-width: 1024px) {
   nav {
+    left: 50%;
+
+    transform: translateX(-50%);
+
     padding: 32px 48px;
   }
 }
@@ -223,11 +239,6 @@ video {
   height: 100svh;
 
   object-fit: cover;
-
-  transition: transform 0.4s;
-}
-video.open-menu {
-  transform: translateX(-50%);
 }
 
 /* video-overlay */
@@ -249,14 +260,10 @@ video.open-menu {
   color: #fff;
 
   background-color: rgb(0 0 0 / 0.4);
-
-  transition: transform 0.4s;
-}
-.video-overlay.open-menu {
-  transform: translateX(-50%);
 }
 .video-overlay div {
   text-align: center;
+  opacity: 0;
 }
 .video-overlay h2 {
   margin: 0 0 8px;

@@ -265,7 +265,6 @@ video {
 }
 .video-overlay div {
   text-align: center;
-  opacity: 0;
 }
 .video-overlay h2 {
   margin: 0 0 8px;
@@ -280,7 +279,7 @@ video {
 }
 @media screen and (min-width: 1024px) {
   .video-overlay h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
   }
   .video-overlay p {

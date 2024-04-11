@@ -152,15 +152,16 @@ nav ul li a {
 
   transition: all 0.4s;
 }
-nav ul li a:hover {
-  filter: brightness(80%);
-  background-color: rgb(255 255 255 / 0.2);
-  border-radius: 4px;
-}
 @media screen and (min-width: 1024px) {
   nav ul li a {
     color: #fff;
   }
+}
+
+nav ul li a:hover {
+  filter: brightness(80%);
+  background-color: rgb(255 255 255 / 0.2);
+  border-radius: 4px;
 }
 
 /* hamburger-menu */
@@ -283,6 +284,12 @@ video {
   font-size: 2.5rem;
   font-weight: bold;
 }
+@media screen and (min-width: 1024px) {
+  .video-overlay h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+}
 
 .video-overlay p {
   margin: 0;
@@ -290,10 +297,6 @@ video {
   font-size: 1.1rem;
 }
 @media screen and (min-width: 1024px) {
-  .video-overlay h2 {
-    font-size: 3.5rem;
-    font-weight: bold;
-  }
   .video-overlay p {
     font-size: 1.5rem;
   }
